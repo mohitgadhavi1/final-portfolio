@@ -130,9 +130,9 @@ h6{
 //Floting Toggler
 .light-dark-mode{
     position:absolute;
-    left: 0;
+    right: 12%;
     top: 6%;
-    background-color: var(--background-light-color-2);
+    background-color:transparent;
     width: 3.5rem;
     height: 2.5rem;
     z-index: 15;
@@ -155,6 +155,10 @@ h6{
       top: 3%; 
       display: none;
       z-index: 15;
+      &:active{
+          transform: rotate(90deg);
+          transition: 0.5s;
+      }
       svg{
           font-size: 3rem;
       }

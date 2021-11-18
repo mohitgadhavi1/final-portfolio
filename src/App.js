@@ -61,21 +61,21 @@ function App() {
             <HomePage onClick={() => setNavToggle(false)} />
           </Route>
           <Route path="/about" exact>
-            <AboutPage />
+            <AboutPage onClick={() => setNavToggle(false)} />
           </Route>
           <Route path="/resume" exact>
-            <ResumePage />
+            <ResumePage onClick={() => setNavToggle(false)} />
           </Route>
           <Route path="/portfolios" exact>
-            <PortfoliosPage />
+            <PortfoliosPage onClick={() => setNavToggle(false)} />
           </Route>
           <Route path="/blogs" exact>
-            <BlogsPage />
+            <BlogsPage onClick={() => setNavToggle(false)} />
           </Route>
-          <Route path="/contact" exact>
+          <Route path="/contact" onClick={() => setNavToggle(false)} exact>
             <ContactPage />
           </Route>
-          <Route path="/work" exact>
+          <Route path="/work" onClick={() => setNavToggle(false)} exact>
             <WorkPage />
           </Route>
         </Switching>
