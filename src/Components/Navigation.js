@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import avatar from "../img/avatar.jpg";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 function Navigation() {
   return (
@@ -16,6 +17,11 @@ function Navigation() {
           </NavLink>
         </li>
         <li className="nav-item">
+          <NavLink to="/work" activeClassName="active-class" exact>
+            Work
+          </NavLink>
+        </li>
+        <li className="nav-item">
           <NavLink to="/resume" activeClassName="active-class" exact>
             Resume
           </NavLink>
@@ -23,14 +29,10 @@ function Navigation() {
 
         <li className="nav-item">
           <NavLink to="/blogs" activeClassName="active-class" exact>
-            Blogs
+            Blogs <LaunchIcon className="nav-item-icon" />{" "}
           </NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink to="/work" activeClassName="active-class" exact>
-            Work
-          </NavLink>
-        </li>
+
         <li className="nav-item">
           <NavLink to="/contact" activeClassName="active-class" exact>
             Contact
@@ -63,7 +65,11 @@ const NavigationStyled = styled.nav`
 
   .nav-items {
     width: 100%;
-
+    .nav-item-icon {
+      position: absolute;
+      margin-left: 1rem;
+      padding-bottom: 5px;
+    }
     text-align: center;
     .active-class {
       background-color: var(--primary-color-light);
