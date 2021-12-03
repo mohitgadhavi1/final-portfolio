@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import Sidebar from "./Components/Sidebar";
 import styled from "styled-components";
 import HomePage from "./Pages/HomePage";
-import AboutPage from "./Pages/AboutPage";
+
 import ResumePage from "./Pages/ResumePage";
+
 import WorkPage from "./Pages/WorkPage";
-import PortfoliosPage from "./Pages/PortfoliosPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
@@ -60,23 +60,17 @@ function App() {
           <Route path="/" exact>
             <HomePage onClick={() => setNavToggle(false)} />
           </Route>
-          <Route path="/about" exact>
-            <AboutPage onClick={() => setNavToggle(false)} />
-          </Route>
           <Route path="/resume" exact>
             <ResumePage onClick={() => setNavToggle(false)} />
           </Route>
-          <Route path="/portfolios" exact>
-            <PortfoliosPage onClick={() => setNavToggle(false)} />
+          <Route path="/work" exact>
+            <WorkPage onClick={() => setNavToggle(false)} />
           </Route>
           <Route path="/blogs" exact>
             <BlogsPage onClick={() => setNavToggle(false)} />
           </Route>
-          <Route path="/contact" onClick={() => setNavToggle(false)} exact>
-            <ContactPage />
-          </Route>
-          <Route path="/work" onClick={() => setNavToggle(false)} exact>
-            <WorkPage />
+          <Route path="/contact" exact>
+            <ContactPage onClick={() => setNavToggle(false)} />
           </Route>
         </Switching>
       </MainContentStyled>

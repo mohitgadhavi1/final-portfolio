@@ -16,11 +16,6 @@ function Navigation() {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" activeClassName="active-class" exact>
-            About
-          </NavLink>
-        </li>
-        <li className="nav-item">
           <NavLink to="/resume" activeClassName="active-class" exact>
             Resume
           </NavLink>
@@ -32,18 +27,13 @@ function Navigation() {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" activeClassName="active-class" exact>
-            Contact
-          </NavLink>
-        </li>
-        <li className="nav-item">
           <NavLink to="/work" activeClassName="active-class" exact>
             Work
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/portfolios" activeClassName="active-class" exact>
-            Portfolios
+          <NavLink to="/contact" activeClassName="active-class" exact>
+            Contact
           </NavLink>
         </li>
       </ul>
@@ -57,6 +47,7 @@ const NavigationStyled = styled.nav`
   flex-direction: column;
   align-items: center;
   width: 100%;
+
   border-right: 1px solid var(--border-color);
   .avatar {
     width: 100%;
@@ -82,7 +73,7 @@ const NavigationStyled = styled.nav`
       display: block;
       a {
         display: block;
-        padding: 0.45rem 0;
+        padding: 0.35rem 0;
         position: relative;
         z-index: 10;
         text-transform: uppercase;
