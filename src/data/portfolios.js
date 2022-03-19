@@ -122,6 +122,15 @@ const portfolios = [
     title: "Microsoft Website Clone",
     text: "Created using HTML and CSS",
   },
+  {
+    id: 14,
+    category: "TypeScript",
+    image: css2,
+    link1: "https://www.google.com",
+    link2: "https://www.google.com",
+    title: "Microsoft Website Clone",
+    text: "Created using HTML and CSS",
+  },
 ];
 
 export default portfolios;
