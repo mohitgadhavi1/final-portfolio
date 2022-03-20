@@ -49,24 +49,24 @@ function ContactPage({ onClick }) {
             </form>
           </div>
           <div className="right-content">
-            <ContactItem
+            {/* <ContactItem
               title={"Phone"}
               icon={phone}
               cont1={"+66-789675637"}
               cont2={"07663520283"}
-            />
+            /> */}
             <ContactItem
               title={"Email"}
               icon={email}
-              cont1={"loremipsum@gmail.com"}
-              cont2={"info.lorem.ipsum@gmail.com"}
+              cont1={"mohitgadhavi1@gmail.com"}
+              // cont2={"info.lorem.ipsum@gmail.com"}
             />
-            <ContactItem
+            {/* <ContactItem
               title={"Address"}
               icon={location}
               cont1={"27 Aldrich Road, London, England"}
               cont2={"United Kingdom"}
-            />
+            /> */}
           </div>
         </InnerLayout>
       </ContactPageStyled>
@@ -87,6 +87,7 @@ const ContactPageStyled = styled.section`
     }
     .right-content {
       display: grid;
+
       grid-template-columns: repeat(1, 1fr);
       @media screen and (max-width: 502px) {
         width: 70%;
