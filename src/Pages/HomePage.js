@@ -7,7 +7,7 @@ import Particle from "../Components/Particle";
 import Typical from "react-typical";
 
 function HomePage({ onClick }) {
-  const Profession = ["Software Engineer", 1000, "Freelancer", 1000];
+  const Profession = ["Software Engineer", 1000, "Web Developer", 1000];
 
   return (
     <HomePageStyled onClick={onClick}>
@@ -24,15 +24,15 @@ function HomePage({ onClick }) {
           from India.{"  "}
         </h2>
         <div className="icons">
-          <a href="https://codepen.io/pen/" className="icon i-facebook">
+          {/* <a href="https://codepen.io/pen/" className="icon i-facebook">
             <FacebookIcon />
-          </a>
-          <a href="https://codepen.io/pen/" className="icon i-github">
+          </a> */}
+          <a href="https://github.com/mohitgadhavi1" className="icon i-github">
             <GithubIcon />
           </a>
-          <a href="https://codepen.io/pen/" className="icon i-youtube">
+          {/* <a href="https://codepen.io/pen/" className="icon i-youtube">
             <YoutubeIcon />
-          </a>
+          </a> */}
         </div>
       </div>
     </HomePageStyled>
